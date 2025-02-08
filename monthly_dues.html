@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Dues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="monthly_dues.css">
+    <script src="monthly_dues.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="citation_logo_big.png" alt="Subdivision Logo" class="logo">
+                <p>Hello, Vlad!</p>
+            </div>
+            <ul>
+                <li><a href="residents.html">Residents</a></li>
+                <li><a href="monthly_dues.html" class="active">Monthly Dues</a></li>
+                <li><a href="stickers.html">Stickers</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="c_permit.html">C Permit</a></li>
+                <li><a href="parking.html">Parking</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a id="to-admin-side" href="accounts.html">Go to Admin Side</a>
+                <a id="change_password">Change Password</a>
+                <a id="logout" href="#">Logout</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>MONTHLY DUES</h1>
+            </header>
+            <div class="search-sort">
+                <!-- Search and Filter Group -->
+                <div class="search-filter-group">
+                    <input type="text" placeholder="Search" class="search-box">
+                    <select>
+                        <option>Sort by</option>
+                        <!-- Additional sorting options -->
+                    </select>
+                    <select>
+                        <option>Member type</option>
+                        <!-- Additional filter options -->
+                    </select>
+                </div>
+
+                <!-- Add Button -->
+                <button class="add-button">ADD +</button>
+            </div>
+            <table class="resident-table">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>PHONE NO.</th>
+                        <th>MEMBER TYPE</th>
+                        <th>STREET LIGHT</th>
+                        <th>AMOUNT</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vladimir D. Leyson</td>
+                        <td>09604578935</td>
+                        <td>Homeowner</td>
+                        <td>yes</td>
+                        <td>₱1,500.00</td>
+                        <td>
+                            <button class="view-history-btn">VIEW HISTORY</button>
+                            <button class="show-add-payment-btn">ADD PAYMENT</button>
+                            <button class="edit">EDIT</button>
+                            <button class="remove">REMOVE</button>
+                        </td>
+                    </tr>
+                    <!-- Add other rows similarly -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <!-- Add Monthly Dues Popup -->
+    <div id="add-dues-popup" class="popup-add hidden">
+        <div class="popup-a">
+            <h2>ADD MONTHLY DUES</h2>
+            <form id="add-dues-form">
+                <div class="form-container">
+                    <label for="resident">Resident:</label>
+                    <select id="resident" name="resident" required>
+                        <option value="" disabled selected>Select Resident</option>
+                        <option value="vlad">Vladimir D. Leyson</option>
+                        <option value="other">Other Resident</option>
+                    </select>
+
+                    <label for="street-light">Street Light:</label>
+                    <select id="street-light" name="street-light" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <label for="monthly-amount">Monthly Due Amount:</label>
+                    <input type="number" id="monthly-amount" name="monthly-amount" value="1500" required>
+                </div>
+                <div class="popup-buttons">
+                    <button type="button" id="cancel-add-dues" class="cancel-btn">CANCEL</button>
+                    <button type="submit" class="confirm-btn">CONFIRM</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Payment Modal -->
+    <div id="add-payment-modal" class="payment-modal-overlay hidden">
+        <div class="payment-modal">
+            <!-- Modal Header -->
+            <div class="payment-modal-header">
+                <h2>ADD PAYMENT</h2>
+            </div>
+
+            <!-- Modal Form -->
+            <div class="payment-form">
+                <label for="payment-date">Date:</label>
+                <input type="date" id="payment-date" required />
+
+                <label for="payment-month">Month:</label>
+                <select id="payment-month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option selected>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+                <label for="payment-amount">Amount:</label>
+                <input type="text" id="payment-amount" value="₱1,500.00" readonly />
+            </div>
+
+            <!-- Buttons -->
+            <div class="payment-modal-buttons">
+                <button id="cancel-payment-btn" class="cancel-btn add_cancel-btn">CANCEL</button>
+                <button id="confirm-payment-btn" class="confirm-btn">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- View History Popup -->
+    <div id="history-popup" class="popup-history hidden">
+        <div class="popup-h">
+            <button id="close-history" class="close-btn">✖</button>
+            <div class="popup-header-h">
+                <h2>HISTORY</h2>
+            </div>
+
+            <!-- Sorting Option -->
+            <div class="history-sort">
+                <label for="sort-history">Sort by</label>
+                <select id="sort-history">
+                    <option value="date">Date</option>
+                    <option value="month">Month</option>
+                    <option value="amount">Amount</option>
+                </select>
+            </div>
+
+            <!-- History Table -->
+            <div class="history-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>MONTH</th>
+                            <th>AMOUNT</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        <tr>
+                            <td>01/05/2024</td>
+                            <td>January</td>
+                            <td>₱1,500.00</td>
+                            <td><button class="remove-btn">REMOVE</button></td>
+                        </tr>
+                        <tr>
+                            <td>02/10/2024</td>
+                            <td>February</td>
+                            <td>₱1,500.00</td>
+                            <td><button class="remove-btn">REMOVE</button></td>
+                        </tr>
+                        <tr>
+                            <td>03/15/2024</td>
+                            <td>March</td>
+                            <td>₱1,500.00</td>
+                            <td><button class="remove-btn">REMOVE</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Monthly Dues Popup -->
+    <div id="edit-dues-popup" class="popup-add hidden">
+        <div class="popup-a">
+            <h2>EDIT MONTHLY DUES</h2>
+            <form id="edit-dues-form">
+                <div class="form-container">
+                    <label for="resident">Resident:</label>
+                    <select id="resident" name="resident" required>
+                        <option value="" disabled selected>Select Resident</option>
+                        <option value="vlad">Vladimir D. Leyson</option>
+                        <option value="other">Other Resident</option>
+                    </select>
+
+                    <label for="street-light">Street Light:</label>
+                    <select id="street-light" name="street-light" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <label for="monthly-amount">Monthly Due Amount:</label>
+                    <input type="number" id="monthly-amount" name="monthly-amount" value="1500" required>
+                </div>
+                <div class="popup-buttons">
+                    <button type="button" id="cancel-edit-dues" class="cancel-btn">CANCEL</button>
+                    <button type="submit" class="confirm-btn">SAVE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Change Password Self Popup -->
+    <div id="change-password-self-popup" class="popup-overlay hidden">
+        <div class="popup">
+            <h2>CHANGE PASSWORD</h2>
+            <form id="change-password-self-form">
+                <div class="form-container">
+                    <label>New Password:</label>
+                    <div class="password-container">
+                        <input type="password" name="new_password" id="new-password-self" required>
+                        <i class="fa fa-eye" id="toggle-password-self" onclick="togglePasswordSelf()"></i>
+                    </div>
+
+                    <label>Confirm New Password:</label>
+                    <div class="password-container">
+                        <input type="password" name="confirm_password" id="confirm-password-self" required>
+                        <i class="fa fa-eye" id="toggle-confirm-password-self"
+                            onclick="toggleConfirmPasswordSelf()"></i>
+                    </div>
+                </div>
+                <div class="popup-buttons">
+                    <button type="button" id="cancel-change-password-self" class="cancel-btn">CANCEL</button>
+                    <button type="submit" class="confirm-btn">SAVE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="remove-popup" class="popup-overlay hidden">
+        <div class="popup">
+            <p>ARE YOU SURE YOU WANT TO REMOVE THIS PAYER?</p>
+            <h3>Vladimir D. Leyson (ADMIN)</h3>
+            <div class="popup-buttons">
+                <button id="cancel-remove" class="cancel-btnr">CANCEL</button>
+                <button id="confirm-remove" class="confirm-btnr">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="logout-popup" class="popup-overlay hidden">
+        <div class="popup">
+            <p>ARE YOU SURE YOU WANT TO LOGOUT?</p>
+            <div class="popup-buttons">
+                <button id="cancel-logout" class="cancel-btn">NO</button>
+                <button id="confirm-logout" class="confirm-btn">YES</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

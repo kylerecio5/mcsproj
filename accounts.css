@@ -1,0 +1,504 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+/* Container for Sidebar and Main Content */
+.container {
+    display: flex;
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 0 0 200px; /* Sidebar has a fixed width of 250px */
+    background-color: #0F5846;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar-header {
+    margin-bottom: 30px;
+}
+
+.sidebar-header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a:hover {
+    background-color: #20BE97;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0; /* Remove left/right padding */
+    background-color: #0F5846; /* Match the sidebar background color */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensures the link fills the entire width */
+    text-align: center; /* Center-align the text */
+}
+
+/* Sidebar Links Hover */
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #20BE97; /* Hover effect */
+}
+
+/* Sidebar Footer Links */
+.sidebar-footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    background-color: #0F5846;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    cursor: pointer; /* Ensure the pointer cursor shows on hover */
+}
+
+/* Sidebar Footer Links Hover */
+.sidebar-footer a:hover {
+    background-color: #20BE97; /* Hover effect */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Allows main content to grow and fill the remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Enables scrolling if the content overflows */
+    background-color: #f8f9fa;
+    width: calc(100% - 200px); /* Adjust width to exclude the sidebar (200px) */
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    width: 100%; /* Ensure it takes up the full width */
+    padding: 20px 0; /* Optional: Add vertical spacing around the header */
+}
+
+h1 {
+    margin: 0; /* Remove default margin for a tighter layout */
+    color: #0F5846;
+    font-weight: 800;
+}
+
+.add-button {
+    background-color: #FEF600;
+    color: black;
+    padding: 35px 35px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    align-self: flex-end; /* Aligns button to the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between items */
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+    flex-grow: 1; /* Makes the group expand to fill the available space */
+    max-width: calc(100% - 120px); /* Ensures it doesn't overlap with the button */
+    margin-right: 20px;
+}
+
+.search-box {
+    padding: 10px;
+    width: 100%; /* Makes the search box expand within the group */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-filter-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto; /* Optional: Adjust width as needed */
+    background-color: white; /* Matches the design of the group */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+/* Table */
+.resident-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white; /* Ensure background is visible with shadow */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Clip the shadow within the radius */
+}
+
+.resident-table th, .resident-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #696969;
+}
+
+.resident-table th {
+    background-color: #f2f2f2;
+}
+
+.status.paid {
+    color: green;
+    font-weight: bold;
+}
+
+.status.unpaid {
+    color: red;
+    font-weight: bold;
+}
+
+.edit-button, .remove, .change_pass {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.change_pass {
+    background-color: #777777;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+}
+
+.remove {
+    background-color: #f44336;
+}
+
+/* Add Account Popup */
+#add-account-popup .popup {
+    max-width: 700px;
+    padding: 25px;
+}
+
+#add-account-popup h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #0F5846;
+    text-align: center;
+}
+
+.form-container {
+    text-align: left;
+    display: flex;
+    gap: 25px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #0F5846;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+textarea {
+    resize: none; /* Prevents resizing */
+}
+
+/* Edit Account Popup */
+#edit-account-popup h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #0F5846;
+    text-align: center;
+}
+
+/* Change Password Popup */
+#change-password-popup .popup {
+    max-width: 700px;
+    padding: 25px;
+}
+
+#change-password-popup h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #0F5846;
+    text-align: center;
+}
+
+#change-password-popup h3 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #6D6D6D;
+    text-align: center;
+}
+
+#change-password-popup .form-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#change-password-popup label {
+    font-weight: bold;
+    color: #0F5846;
+}
+
+#change-password-popup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.cancel-btnr {
+    background-color: #FF521C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+}
+
+.confirm-btnr {
+    text-align: center;
+    background-color: #60FE00;
+    color: #0F5846;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#remove-popup .popup h3 {
+    color: #6D6D6D; /* Change this color to your preferred value */
+}
+
+/* Change Password Self Popup */
+#change-password-self-popup .popup {
+    max-width: 700px;
+    padding: 25px;
+}
+
+#change-password-self-popup h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #0F5846;
+    text-align: center;
+}
+
+#change-password-self-popup .form-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#change-password-self-popup label {
+    font-weight: bold;
+    color: #0F5846;
+}
+
+#change-password-self-popup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background-color: #FF521C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+}
+
+.confirm-btn {
+    background-color: #60FE00;
+    color: #0F5846;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+.popup p {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0F5846;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cancel-btn {
+    background-color: #FF521C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+}
+
+.confirm-btn {
+    text-align: center;
+    background-color: #60FE00;
+    color: #0F5846;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 100px;
+}
+
+.hidden {
+    display: none;
+}

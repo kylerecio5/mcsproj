@@ -1,0 +1,526 @@
+/* Remove margin and padding from body */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('bg_citation.png'); /* Add your background image here */
+  background-size: cover; /* Make sure the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  height: 100vh; /* Ensure the body takes full height */
+  max-width: 100%; /* Prevent horizontal scroll */
+}
+
+/* Navigation bar styling with green line at the bottom */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+  border-bottom: 4px solid #0F5846; /* Add a green line at the bottom */
+  box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: block;
+  color: #2F2F2F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+/* Style for the "Home" link and the logo image */
+.topnav a.active {
+  background: none; /* Remove background from the link container */
+}
+
+.topnav a img.logo-icon {
+  height: 19px; /* Adjust as needed */
+  width: auto;
+  vertical-align: middle;
+  background-color: transparent; /* Ensure the background is transparent */
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Home link aligned to the left */
+.topnav a:first-child {
+  float: left;
+}
+
+/* Other links aligned to the right */
+.topnav a:not(:first-child) {
+  float: right;
+}
+
+/* Change the color of links on hover (not applied to the image) */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #2F2F2F;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style for the "Home" link */
+.topnav a[id="homee"] {
+  background-color: #64F9D4; /* Set the background color */
+  border-radius: 25px 25px 0 0; /* Top-left and top-right radius */
+  color: #2F2F2F; /* Optional: Set text color for contrast */
+}
+
+/* Add hover effect for consistency */
+.topnav a[id="homee"]:hover {
+  background-color: #4FD1A3; /* Slightly darker shade for hover */
+  color: #2F2F2F; /* Ensure text is readable */
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Responsive menu when screen width is small */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Center the H1 element and make the text white */
+h1 {
+  color: white; /* Make the text white */
+  text-align: center; /* Center the text horizontally */
+  margin-top: 50px; /* Adjust this value to vertically center or position it */
+  font-size: 80px; /* Adjust the font size */
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+h2 {
+  color: white; /* Make the text white */
+  text-align: center; /* Center the text horizontally */
+  margin-top: -45px; /* Adjust this value to vertically center or position it */
+  font-size: 30px; /* Adjust the font size */
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Reduce the font size and margin on small screens */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px; /* Smaller font size for smaller screens */
+    margin-top: 25px; /* Adjust margin to fit smaller screens */
+  }
+  h2 {
+    font-size: 20px; /* Smaller font size for smaller screens */
+    margin-top: -20px; /* Adjust margin to fit smaller screens */
+  }
+}
+
+/* Slideshow wrapper with a white background */
+.slideshow-wrapper {
+  background-color: white; /* Set the background color to white */
+  padding-top: 30px;
+  border-radius: 30px; /* Optional: Add rounded corners for a smooth look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow for depth */
+  margin: auto; /* Center the wrapper and add spacing */
+  max-width: 850px; /* Set a max-width for the whole slideshow */
+  margin-top: 60px;
+  box-sizing: border-box; /* Prevent content from overflowing */
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow-wrapper {
+    max-width: 100%; /* Ensure the slideshow spans the full width on smaller screens */
+    padding: 10px; /* Add some padding */
+  }
+}
+
+/* Title styling for amenities */
+.amenities-title {
+  text-align: center; /* Center the text */
+  font-size: 30px; /* Set the font size */
+  color: #0F5846; /* Set the color to match the theme */
+  margin-bottom: 20px; /* Add some space below the title */
+  font-family: sans-serif; /* Use the same font family as the rest */
+  font-weight: bold; /* Make it bold for emphasis */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 830px; /* You can adjust this size if needed */
+  height: auto;
+  position: relative;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%; /* Ensure the images take the full width of the container */
+  height: auto; /* Auto height to maintain the image aspect ratio */
+}
+
+@media screen and (max-width: 600px) {
+  .slideshow-container img {
+    width: 100%; /* Full-width for smaller devices */
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+.welcome-container {
+  background-image: url('green_gradient.png'); /* Add your image URL here */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  margin: 20px auto; /* Center the container horizontally with margin */
+  color: white; /* Text color for better visibility */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  height: 50vh; /* Make the container fill the entire height of the viewport */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.welcome-heading {
+  color: #0F5846;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #2F2F2F;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  max-width: 1000px;
+  word-spacing: 10px; /* Adds space between words, adjust as needed */
+  line-height: 1.8; /* Adds space between lines, adjust as needed */
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-heading {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+  .welcome-message {
+    font-size: 18px;
+  }
+}
+
+/* General styling for container1 and container2 */
+.container1, .container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: sans-serif;
+  gap: 20px; /* Add space between items */
+}
+
+.left-content1, .right-content1, .left-content2, .right-content2 {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  max-width: 400px; /* Limit the maximum width for better responsiveness */
+}
+
+#description1 {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+#description2 {
+  text-align: justify;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* Price Styling */
+#s-price {
+  font-size: 18px;
+  color: #0F5846; /* Set the price color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#price-link {
+  color: inherit; /* Inherit color from #s-price */
+  text-decoration: none;
+}
+
+#price-link:hover #s-price {
+  color: #0a382c; /* Darker shade on hover */
+}
+
+/* Title colors */
+#title1 {
+  color: #0F5846;
+  text-align: left;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#title2 {
+  color: #0F5846;
+  text-align: right;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .container1, .container2 {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align for smaller screens */
+  }
+
+  .left-content1, .right-content1, .left-content2, .right-content2 {
+    max-width: 100%; /* Allow full width on small screens */
+    margin: 0 auto; /* Center the items */
+  }
+
+  .left-content1 img, .right-content2 img {
+    margin: 0 auto 15px auto; /* Center image and add bottom margin */
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Ensure it doesn't get too large */
+  }
+
+  #title1, #title2 {
+    text-align: center;
+  }
+
+  #description1, #description2 {
+    text-align: center; /* Align text to center for readability */
+  }
+}
+
+.right-content1, .left-content2 {
+  margin-bottom: -45px;
+}
+
+/* General styling for container2 */
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: sans-serif;
+  gap: 20px; /* Add space between items */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .container2 {
+    flex-direction: column-reverse; /* Stack .right-content2 above .left-content2 */
+    text-align: center; /* Center align for smaller screens */
+    margin-bottom: 60px;
+  }
+
+  .left-content2, .right-content2 {
+    max-width: 100%; /* Allow full width on small screens */
+    margin: 0 auto; /* Center the items */
+  }
+
+  .right-content2 img {
+    margin: 0 auto 15px auto; /* Center image and add bottom margin */
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Ensure it doesn't get too large */
+  }
+
+  #description2 {
+    text-align: center; /* Align text to center for readability */
+  }
+}
+
+#bl_button1, #br_button2, #bl_button3, #br_button4, #bl_button5 {
+  background-color: #FEF600; /* Yellow background */
+  color: #0F5846; /* Black text */
+  font-family: sans-serif; /* Sans-serif font */
+  font-weight: bold;
+  font-size: 18px; /* Font size */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 20px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color on hover */
+}
+
+/* Button hover effect */
+#bl_button1:hover, #br_button2:hover, #bl_button3:hover, #br_button4:hover, #bl_button5:hover {
+  background-color: #ffd700; /* Slightly darker yellow on hover */
+}
+
+.line {
+  border-top: 1px solid #0F5846; /* Adjust the thickness and color */
+  margin: 20px auto; /* Add some vertical spacing for better visibility */
+  max-width: 900px;
+}
+
+.add-heading {
+  color: #0F5846;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .add-heading {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+}
+
+.additionals-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  margin: 20px 0; /* Add some vertical margin if needed */
+}
+
+#add {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  margin: 20px 0; /* Add some vertical margin if needed */
+  margin-top: 120px;
+}
+
+#logo {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.full-width-image {
+  width: 100%;         /* Make the image occupy the full width of the screen */
+  height: 300px;      /* Set a specific height for the image */
+  object-fit: cover;  /* Ensure the image covers the entire area without distortion */
+  margin-bottom: -100px;
+}
+
+#at {
+  text-align: center;
+  font-size: 23px;
+  color: #2F2F2F;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  word-spacing: 10px; /* Adds space between words, adjust as needed */
+  line-height: 1.8; /* Adds space between lines, adjust as needed */
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  font-family: sans-serif;
+  background-color: #0F5846;
+  color: white; /* Ensure text is visible on green */
+  text-align: center;
+  padding: 10px 0; /* Add some padding for better appearance */
+}
+
+.footer a {
+  color: white; /* Change the link color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: lightgreen; /* Optional: Change color on hover for better visibility */
+}

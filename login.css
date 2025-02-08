@@ -1,0 +1,172 @@
+/* Remove margin and padding from body */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('login_bg.png'); /* Add your background image here */
+  background-size: cover; /* Make sure the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  height: 100vh; /* Ensure the body takes full height */
+  max-width: 100%; /* Prevent horizontal scroll */
+  font-family: sans-serif;
+}
+
+/* Navigation bar styling with green line at the bottom */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+  border-bottom: 4px solid #0F5846; /* Add a green line at the bottom */
+  box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: block;
+  color: #2F2F2F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+/* Style for the "Home" link and the logo image */
+.topnav a.active {
+  background: none; /* Remove background from the link container */
+}
+
+.topnav a img.logo-icon {
+  height: 19px; /* Adjust as needed */
+  width: auto;
+  vertical-align: middle;
+  background-color: transparent; /* Ensure the background is transparent */
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Home link aligned to the left */
+.topnav a:first-child {
+  float: left;
+}
+
+/* Other links aligned to the right */
+.topnav a:not(:first-child) {
+  float: right;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  margin-top: 50px;
+}
+
+.logo-container img {
+  max-width: 100%; /* Adjust the max-width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.gap {
+  margin: 20px;
+}
+
+.login_bg {
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px; /* Add padding to create space inside the form */
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+/* Login Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  color: #0F5846;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+form label {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+form input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+form .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #FEF600;
+  color: #0F5846;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #cfc801;
+}
+
+.footer {
+  font-family: sans-serif;
+  background-color: #0F5846;
+  color: white; /* Ensure text is visible on green */
+  text-align: center;
+  padding: 10px 0; /* Add some padding for better appearance */
+}
+
+.footer a {
+  color: white; /* Change the link color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: lightgreen; /* Optional: Change color on hover for better visibility */
+}

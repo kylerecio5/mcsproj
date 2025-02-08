@@ -1,0 +1,18 @@
+
+[2024-12-26 16:21:09] Received form data:
+[2024-12-26 16:21:09] First Name: Vladimir
+[2024-12-26 16:21:09] Middle Name: D
+[2024-12-26 16:21:09] Last Name: Leyson
+[2024-12-26 16:21:09] Phone Number: 123456
+[2024-12-26 16:21:09] Email: Vladimir20@gmail.com
+[2024-12-26 16:21:09] Sex: Male
+[2024-12-26 16:21:09] Age: 21
+[2024-12-26 16:21:09] Date of Birth: 2003-10-10
+[2024-12-26 16:21:09] Address: Sapphire
+[2024-12-26 16:21:09] Account Type: Staff
+[2024-12-26 16:21:09] Username: vlad2
+[26-Dec-2024 16:21:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'username' cannot be null in C:\xamppnew\htdocs\Citation Homes\add_account.php:126
+Stack trace:
+#0 C:\xamppnew\htdocs\Citation Homes\add_account.php(126): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xamppnew\htdocs\Citation Homes\add_account.php on line 126

@@ -1,0 +1,866 @@
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlo123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+[2025-01-03 16:36:00] User logged in with account_id: 49
+[2025-01-03 16:36:00] Received new password input.
+[2025-01-03 16:36:00] Prepared new password for update (no hashing applied).
+[2025-01-03 16:36:00] Executing query to update password in tbl_accounts for account_id = 49.
+[2025-01-03 16:36:00] Password updated successfully in tbl_accounts for account_id = 49.
+[2025-01-03 16:36:00] Executing query to update password in tbl_admin for admin_id related to account_id = 49.
+[2025-01-03 16:36:00] Password updated successfully in tbl_admin for admin_id related to account_id = 49.
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: 123456
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: ally2
+Password: ally123
+Login failed: Invalid username or password.
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Redirecting to residents.php
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: jian123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: jian123
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+[2025-01-05 05:46:05] User logged in with account_id: 50
+[2025-01-05 05:46:05] Received new password input.
+[2025-01-05 05:46:05] Prepared new password for update (no hashing applied).
+[2025-01-05 05:46:05] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 05:46:05] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 05:46:05] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 05:46:05] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:26:06] User logged in with account_id: 50
+[2025-01-05 07:26:06] Received new password input.
+[2025-01-05 07:26:06] Prepared new password for update (no hashing applied).
+[2025-01-05 07:26:06] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:26:06] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:26:06] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:26:06] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:26:29] User logged in with account_id: 50
+[2025-01-05 07:26:29] Received new password input.
+[2025-01-05 07:26:29] Prepared new password for update (no hashing applied).
+[2025-01-05 07:26:29] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:26:29] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 07:26:29] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:26:29] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:39:25] User logged in with account_id: 50
+[2025-01-05 07:39:25] Received new password input.
+[2025-01-05 07:39:25] Prepared new password for update (no hashing applied).
+[2025-01-05 07:39:25] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:39:25] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 07:39:25] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:39:25] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:39:25] User logged in with account_id: 50
+[2025-01-05 07:39:25] Received new password input.
+[2025-01-05 07:39:25] Prepared new password for update (no hashing applied).
+[2025-01-05 07:39:25] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:39:25] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:39:25] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:39:25] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:40:22] User logged in with account_id: 50
+[2025-01-05 07:40:22] Received new password input.
+[2025-01-05 07:40:22] Prepared new password for update (no hashing applied).
+[2025-01-05 07:40:22] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:40:22] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 07:40:22] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:40:22] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:40:22] User logged in with account_id: 50
+[2025-01-05 07:40:22] Received new password input.
+[2025-01-05 07:40:22] Prepared new password for update (no hashing applied).
+[2025-01-05 07:40:22] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:40:22] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:40:22] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:40:22] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:44:26] User logged in with account_id: 50
+[2025-01-05 07:44:26] Received new password input.
+[2025-01-05 07:44:26] Prepared new password for update (no hashing applied).
+[2025-01-05 07:44:26] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:44:26] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 07:44:26] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:44:26] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:44:26] User logged in with account_id: 50
+[2025-01-05 07:44:26] Received new password input.
+[2025-01-05 07:44:26] Prepared new password for update (no hashing applied).
+[2025-01-05 07:44:26] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:44:26] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:44:26] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:44:26] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:58:06] User logged in with account_id: 50
+[2025-01-05 07:58:06] Received new password input.
+[2025-01-05 07:58:06] Prepared new password for update (no hashing applied).
+[2025-01-05 07:58:06] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:58:06] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:58:06] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:58:06] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:58:06] User logged in with account_id: 50
+[2025-01-05 07:58:06] Received new password input.
+[2025-01-05 07:58:06] Prepared new password for update (no hashing applied).
+[2025-01-05 07:58:06] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 07:58:06] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 07:58:06] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 07:58:06] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:04:35] User logged in with account_id: 50
+[2025-01-05 08:04:35] Received new password input.
+[2025-01-05 08:04:35] Prepared new password for update (no hashing applied).
+[2025-01-05 08:04:35] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:35] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:35] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:04:35] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:04:35] User logged in with account_id: 50
+[2025-01-05 08:04:35] Received new password input.
+[2025-01-05 08:04:35] Prepared new password for update (no hashing applied).
+[2025-01-05 08:04:35] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:35] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:51] User logged in with account_id: 50
+[2025-01-05 08:04:51] Received new password input.
+[2025-01-05 08:04:51] Prepared new password for update (no hashing applied).
+[2025-01-05 08:04:51] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:51] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:51] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:04:51] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:04:51] User logged in with account_id: 50
+[2025-01-05 08:04:51] Received new password input.
+[2025-01-05 08:04:51] Prepared new password for update (no hashing applied).
+[2025-01-05 08:04:51] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:04:51] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 08:06:42] User logged in with account_id: 50
+[2025-01-05 08:06:42] Received new password input.
+[2025-01-05 08:06:42] Prepared new password for update (no hashing applied).
+[2025-01-05 08:06:42] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:06:42] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:06:42] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:06:42] User logged in with account_id: 50
+[2025-01-05 08:06:42] Received new password input.
+[2025-01-05 08:06:42] Prepared new password for update (no hashing applied).
+[2025-01-05 08:06:42] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:06:42] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:08:06] User logged in with account_id: 50
+[2025-01-05 08:08:06] Received new password input.
+[2025-01-05 08:08:06] Prepared new password for update (no hashing applied).
+[2025-01-05 08:08:06] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:08:06] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:08:06] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:14:27] User logged in with account_id: 50
+[2025-01-05 08:14:27] Received new password input.
+[2025-01-05 08:14:27] Prepared new password for update (no hashing applied).
+[2025-01-05 08:14:27] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:14:27] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 08:14:27] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:14:27] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:14:27] User logged in with account_id: 50
+[2025-01-05 08:14:27] Received new password input.
+[2025-01-05 08:14:27] Prepared new password for update (no hashing applied).
+[2025-01-05 08:14:27] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 08:14:27] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 08:14:27] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 08:14:27] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:24:33] User logged in with account_id: 50
+[2025-01-05 11:24:33] Received new password input.
+[2025-01-05 11:24:33] Prepared new password for update (no hashing applied).
+[2025-01-05 11:24:33] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 11:24:33] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 11:24:33] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:24:33] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:28:09] User logged in with account_id: 50
+[2025-01-05 11:28:09] Received new password input.
+[2025-01-05 11:28:09] Prepared new password for update (no hashing applied).
+[2025-01-05 11:28:09] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 11:28:09] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 11:28:09] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:28:09] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:28:09] User logged in with account_id: 50
+[2025-01-05 11:28:09] Received new password input.
+[2025-01-05 11:28:09] Prepared new password for update (no hashing applied).
+[2025-01-05 11:28:09] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 11:28:09] No rows affected in tbl_accounts for account_id = 50.
+[2025-01-05 11:28:09] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:28:09] No rows affected in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:33:39] User logged in with account_id: 50
+[2025-01-05 11:33:39] Received new password input.
+[2025-01-05 11:33:39] Prepared new password for update (no hashing applied).
+[2025-01-05 11:33:39] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 11:33:39] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 11:33:39] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:33:39] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:43:49] User logged in with account_id: 50
+[2025-01-05 11:43:49] Received new password input.
+[2025-01-05 11:43:49] Prepared new password for update (no hashing applied).
+[2025-01-05 11:43:49] Executing query to update password in tbl_accounts for account_id = 50.
+[2025-01-05 11:43:49] Password updated successfully in tbl_accounts for account_id = 50.
+[2025-01-05 11:43:49] Executing query to update password in tbl_admin for admin_id related to account_id = 50.
+[2025-01-05 11:43:49] Password updated successfully in tbl_admin for admin_id related to account_id = 50.
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Redirecting to residents.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: admin123
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Username: ally1234
+Password: ally2
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Redirecting to residents.php
+[2025-01-06 06:19:38] User logged in with account_id: 9
+[2025-01-06 06:19:38] Received new password input.
+[2025-01-06 06:19:38] Prepared new password for update (no hashing applied).
+[2025-01-06 06:19:38] Executing query to update password in tbl_accounts for account_id = 9.
+[2025-01-06 06:19:38] Password updated successfully in tbl_accounts for account_id = 9.
+[2025-01-06 06:19:38] Executing query to update password in tbl_admin for admin_id related to account_id = 9.
+[2025-01-06 06:19:38] No rows affected in tbl_admin for admin_id related to account_id = 9.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: 123456
+Login failed: Invalid username or password.
+Username: jian123
+Password: 123456
+Login failed: Invalid username or password.
+Username: jian123
+Password: 1234567
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopog
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlo123
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: ally1234
+Password: ally2
+Login failed: Invalid username or password.
+Username: ally2
+Password: carlo123
+Login failed: Invalid username or password.
+Username: ally1234
+Password: carlo123
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Username: ally1234
+Password: carlo123
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Redirecting to residents.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlodsa
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: admin1
+Login failed: Invalid username or password.
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: ally1234
+Password: carlo123
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Username: ally1234
+Password: carlo123
+Logged in as: ally1234
+Role: Staff
+Session role check: Staff
+Redirecting to residents.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlo123
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopgi
+Login failed: Invalid username or password.
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Username: jian123
+Password: carlopogi
+Logged in as: jian123
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Username: 12345
+Password: 12345
+Logged in as: 12345
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Username: admin1
+Password: subotite
+Logged in as: admin1
+Role: Admin
+Session role check: Admin
+Redirecting to accounts.php

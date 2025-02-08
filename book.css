@@ -1,0 +1,489 @@
+/* Remove margin and padding from body */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('price_bg.png'); /* Add your background image here */
+  background-size: cover; /* Make sure the image covers the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  height: 100vh; /* Ensure the body takes full height */
+  max-width: 100%; /* Prevent horizontal scroll */
+}
+  
+  /* Navigation bar styling with green line at the bottom */
+  .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the navbar spans the full width */
+    border-bottom: 4px solid #0F5846; /* Add a green line at the bottom */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display: block;
+    color: #2F2F2F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  
+  /* Style for the "Home" link and the logo image */
+  .topnav a.active {
+    background: none; /* Remove background from the link container */
+  }
+  
+  .topnav a img.logo-icon {
+    height: 19px; /* Adjust as needed */
+    width: auto;
+    vertical-align: middle;
+    background-color: transparent; /* Ensure the background is transparent */
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Home link aligned to the left */
+  .topnav a:first-child {
+    float: left;
+  }
+  
+  /* Other links aligned to the right */
+  .topnav a:not(:first-child) {
+    float: right;
+  }
+  
+  /* Change the color of links on hover (not applied to the image) */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #2F2F2F;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  /* Style for the "Home" link */
+.topnav a[href="book.html"] {
+  background-color: #64F9D4; /* Set the background color */
+  border-radius: 25px 25px 0 0; /* Top-left and top-right radius */
+  color: #2F2F2F; /* Optional: Set text color for contrast */
+}
+
+/* Add hover effect for consistency */
+.topnav a[href="book.html"]:hover {
+  background-color: #4FD1A3; /* Slightly darker shade for hover */
+  color: #2F2F2F; /* Ensure text is readable */
+}
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* Responsive menu when screen width is small */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  h1 {
+    color: #FFFFFF; /* Make the text white */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px; /* Adjust this value to vertically center or position it */
+    font-size: 50px; /* Adjust the font size */
+    font-family: sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 40px; /* Smaller font size for smaller screens */
+      margin-top: 25px; /* Adjust margin to fit smaller screens */
+    }
+  }
+
+  .pad {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .form_background {
+    background: #ffffff;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px; /* Add padding to create space inside the form */
+    min-height: 100%; /* Ensures the background extends to fit all content */
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+  }  
+
+  .booking-form {
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1200px;
+  }
+  
+  .booking-form h2 {
+    text-align: center;
+    color: #0F5846;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  /* First Layer (3 columns) */
+  .form-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-left, .form-middle, .form-right {
+    flex: 1;
+    min-width: 250px;
+    margin: 2px;
+    justify-content: center;margin-left: 0px;
+  }
+
+  .form-left {
+    max-width: 450px;
+  }
+
+  .form-middle {
+    max-width: 286px;
+  }
+
+  .form-right {
+    max-width: 286px;
+  }
+  
+  .booking-form label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="tel"],
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 21px;
+  }
+  
+  /* Specific styles for time buttons */
+  .booking-form .time-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .booking-form .time-btn {
+    padding: 10px 15px;
+    background-color: #64F9D4;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-form .time-btn:hover {
+    background-color: #4FD1A3;
+  }
+
+  #additionals_title {
+    text-align: center;
+    color: #0C4738;
+    font-size: 24px;
+    position: relative;
+    margin-top: 30px; /* Add some spacing before the title */
+    padding-top: 15px; /* Add padding to separate the line from the text */
+}
+
+#additionals_title::before {
+  content: ""; /* Adds a visual element */
+  position: absolute;
+  top: -10px; /* Move the line up by 10px (adjust as needed) */
+  left: 50%; /* Centers the line horizontally */
+  transform: translateX(-50%);
+  width: 100%; /* Adjust the width of the line */
+  height: 1px; /* Line thickness */
+  background-color: #0F5846; /* Green color for the line */
+}
+  
+  /* Left & Right Sections for second layer */
+  .form-left-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Add Booking Button */
+
+  /* Add a green line above the Add Booking button */
+.form-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.form-bottom::before {
+  content: ""; /* Creates an empty element for the line */
+  position: absolute;
+  top: -10px; /* Position the line above the button */
+  left: 50%; /* Center the line horizontally */
+  transform: translateX(-50%); /* Adjust the position to ensure it's centered */
+  width: 100%; /* Adjust the width of the line */
+  height: 1px; /* Set the line thickness */
+  background-color: #0F5846; /* Green color */
+}
+  
+  .booking-form .add-booking-btn {
+    background-color: #E7E7E7;
+    color: #0F5846;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  .booking-form .add-booking-btn:hover {
+    background-color: #0F5846;
+    color: #ffffff;
+  }
+
+  .booking-form textarea {
+    resize: none; /* Prevent resizing of the textarea */
+    width: 95%; /* Set the width as a percentage or a fixed value */
+    height: 179px
+  }
+  
+  #inline-calendar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Adjust for small screens */
+  @media screen and (max-width: 768px) {
+    .form-content {
+      flex-direction: column; /* Stack sections vertically on small screens */
+    }
+  
+    .form-left-bottom {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form-bottom {
+      margin-top: 20px;
+    }
+  }
+
+  /* total amount */
+  
+  .pad2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+
+  .total_background {
+    background: #ffffff;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px; /* Add padding to create space inside the form */
+    min-height: 100%; /* Ensures the background extends to fit all content */
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    font-family: sans-serif;
+  }
+
+  #breakdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 0.5px dashed #0F5846; /* Changed solid to dashed */
+    padding-bottom: 5px; /* Adds space below the text for better spacing */
+    margin-bottom: 10px; /* Adds spacing between items */
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid #0F5846; /* Add a green line above the total */
+    border-bottom: 0.5px dashed #0F5846; /* Changed solid to dashed */
+    padding-bottom: 5px; /* Adds space below the text for better spacing */
+    margin-bottom: 10px; /* Adds spacing between items */
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .form-bottom1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    margin-bottom: 20px;
+  }
+  
+  .form-bottom1 .reset-btn {
+    background-color: #FF521C;
+    color: #E0F3EF;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    margin-right: 50px; /* Add spacing between buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 150px;
+  }
+  
+  .form-bottom1 .reset-btn:hover {
+    background-color: #a53412;
+    color: #ffffff;
+  }
+  
+  .form-bottom1 .final-book-btn {
+    background-color: #FEF600;
+    color: #0F5846;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 150px;
+  }
+  
+  .form-bottom1 .final-book-btn:hover {
+    background-color: #a09b01;
+    color: #ffffff;
+  }
+  
+  .footer {
+    font-family: sans-serif;
+    background-color: #0F5846;
+    color: white; /* Ensure text is visible on green */
+    text-align: center;
+    padding: 10px 0; /* Add some padding for better appearance */
+  }
+  
+  .footer a {
+    color: white; /* Change the link color to white */
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: lightgreen; /* Optional: Change color on hover for better visibility */
+  }
+  /* Style for the alert box */
+.alert-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 9999;
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* Add this CSS to your stylesheet */
+.time-btn.selected {
+  background-color: #555; /* Darken the button */
+  color: white; /* Change text color for visibility */
+}
+
+

@@ -1,0 +1,126 @@
+[02-Jan-2025 03:35:59 Europe/Berlin] Array
+(
+    [sticker_id] => 
+    [first_name] => Cyril11
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2025-01-09
+    [vehicle_type] => Sedan
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[02-Jan-2025 03:50:16 Europe/Berlin] Array
+(
+    [sticker_id] => 
+    [first_name] => Cyril1
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2025-01-04
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[02-Jan-2025 03:54:23 Europe/Berlin] Array
+(
+    [sticker_id] => 
+    [first_name] => Cyril1
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2025-01-04
+    [vehicle_type] => Sedan
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[03-Jan-2025 02:26:27 Europe/Berlin] Array
+(
+    [sticker_id] => 2
+    [first_name] => Cyrila
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2024-12-18
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[03-Jan-2025 02:26:32 Europe/Berlin] Array
+(
+    [sticker_id] => 2
+    [first_name] => Cyrilaa
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2024-12-18
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[03-Jan-2025 14:40:06 Europe/Berlin] Array
+(
+    [sticker_id] => 2
+    [first_name] => Cyrilaaa
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2024-12-18
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[05-Jan-2025 07:02:58 Europe/Berlin] Array
+(
+    [sticker_id] => 2
+    [first_name] => Cyril
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2024-12-18
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 100.00
+)
+
+[08-Jan-2025 01:57:25 Europe/Berlin] Array
+(
+    [sticker_id] => 2
+    [first_name] => Cyril
+    [middle_name] => D.
+    [last_name] => Adolar
+    [phone_number] => 09664353496
+    [date] => 2024-12-18
+    [vehicle_type] => SUV
+    [plate_number] => NAG 0866
+    [sticker_number] => 121
+    [amount] => 200
+)
+
+[06-Feb-2025 06:40:34 Europe/Berlin] Array
+(
+    [sticker_id] => 13
+    [first_name] => vlad
+    [middle_name] => b
+    [last_name] => gay
+    [phone_number] => 90456485967
+    [date] => 2025-02-06
+    [vehicle_type] => Sedan
+    [plate_number] => NKA8706
+    [sticker_number] => 135
+    [amount] => 200.00
+)
+

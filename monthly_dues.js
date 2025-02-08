@@ -69,24 +69,34 @@ document.addEventListener("DOMContentLoaded", () => {
                }
            });
 
-    // Function to fetch and display monthly dues data
-    function fetchMonthlyDues() {
-
-                // Get the query string from the current URL
         const queryString = window.location.search;
-
         // Create a URLSearchParams object
         const urlParams = new URLSearchParams(queryString);
 
         // Get the value of the 'year' parameter
         const year = urlParams.get('year');
+    // Function to fetch and display monthly dues data
+    function fetchMonthlyDues() {
+
+                // Get the query string from the current URL
+        
 
         // Check and use the parameter
         if (year) {
             console.log(`Year parameter: ${year}`);
         } else {
             console.log("Year parameter is not present in the URL.");
+
+            const currentUrl = new URL(window.location.href);
+            currentUrl.searchParams.set('year', getCurrentYear()); // Set or update the 'year' parameter
+
+            // Redirect to the same page with the updated URL
+            window.location.href = currentUrl.toString();
+
         }
+        //const yearFilter = document.getElementById("sort-by");
+        document.getElementById("sort-by").value = year;
+        
 
         const addPaymentModal = document.getElementById("add-payment-modal");
         const editPaymentModal = document.getElementById("edit-dues-popup");
@@ -105,8 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td>${dues.Amount}</td>
                 <td>${dues.Status}</td>
                 <td>
-                    <button class="view-history-btn" data-id="${dues.ID}" name="historyBtn">PAYMENT HISTORY</button>
-                    <button class="show-add-payment-btn" data-resident="${dues.ID}" data-mdues="${dues.Amount}">ADD PAYMENT</button>
+                    <button class="view-history-btn" data-id="${dues.ID}"  name="historyBtn">PAYMENT HISTORY</button>
+                    <button class="show-add-payment-btn" data-resident="${dues.ID}" data-mdues="${dues.Amount}" data-exclude="${dues.Paid_Months}">ADD PAYMENT</button>
                     <button class="edit" data-id="${dues.ID}" data-duesId="${dues.Dues_ID}" data-resident="${dues.ID}"  data-streetlight="${dues.StreetLight}" data-mdues="${dues.Amount}">EDIT</button>
                     <button class="remove remove_duesBtn" data-duesId="${dues.Dues_ID}" name="remove_duesBtn" id="remove_duesBtn">ARCHIVE</button>
                 </td>
@@ -124,9 +134,26 @@ document.addEventListener("DOMContentLoaded", () => {
                             console.log("Add Payment button clicked!");
                             addPaymentModal.classList.remove("hidden");
 
+                            const selectElement = document.getElementById("payment-month");
+
                             const residentId = event.target.getAttribute('data-resident');
                             const mdues = event.target.getAttribute('data-mdues');
+                            const exlude = event.target.getAttribute('data-exclude');
+                            const listList = exlude.split("|");
 
+                            Array.from(selectElement.options).forEach(option => {
+                                option.hidden = false; // Show option
+                            });
+
+                        
+
+                            Array.from(selectElement.options).forEach(option => {
+                                if (listList.includes(option.value)) {
+                                    option.hidden = true; // Hide the option
+                                }
+                            });
+
+                            console.log("listList " + listList);
                             console.log("mdues " + mdues);
                             document.getElementById("add_payment_residentID").value = residentId;
                             document.getElementById("add_amount").value = mdues;
@@ -242,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             console.log(`Button clicked for data-id: ${residentId}`);
                             const userId = residentId; // Or get this from user input
 
-                            fetch(`fetch_dues_history.php?user=${userId}`)
+                            fetch(`fetch_dues_history.php?user=${userId}&year=${year}`)
                                 .then(response => {
                                     if (!response.ok) {
                                         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -436,6 +463,14 @@ document.addEventListener("DOMContentLoaded", () => {
             passwordToggle.classList.remove("fa-eye-slash");
             passwordToggle.classList.add("fa-eye");
         }
+    }
+
+    function getCurrentYear(){
+
+        const currentYear = new Date().getFullYear();
+        console.log(currentYear);
+        return currentYear;
+
     }
 
 });

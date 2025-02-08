@@ -18,12 +18,34 @@ $yearFilter = $_GET['year'];
 $yearFilter = filter_var($yearFilter, FILTER_SANITIZE_NUMBER_INT);
 
 
-// Fetch data from tbl_monthly_dues
-$query = "SELECT r.residentcode, m.Dues_ID, r.resident_ID AS ID, CONCAT(r.F_name,' ',r.M_name,' ',r.L_name) as Resident, m.StreetLight, m.Amount, m.Status
+// Fetch data from tbl_monthly_dues //OLD QUERY
+// $query = "SELECT r.residentcode, m.Dues_ID, r.resident_ID AS ID, CONCAT(r.F_name,' ',r.M_name,' ',r.L_name) as Resident, m.StreetLight, m.Amount, m.Status
+// FROM tbl_residents r 
+// JOIN tbl_monthly_dues m 
+// ON r.resident_ID = m.resident 
+// WHERE m.Year = :yearFilter";
+
+
+$query = "
+SELECT  
+    r.residentcode, 
+    m.Dues_ID, 
+    r.resident_ID AS ID, 
+    CONCAT(r.F_name, ' ', r.M_name, ' ', r.L_name) AS Resident, 
+    m.StreetLight, 
+    m.Amount, 
+    (SELECT group_concat(h1.Month separator '|') from tbl_history h1 where h1.Resident_ID = r.Resident_ID) as Paid_Months,
+        CASE WHEN (
+(SELECT MONTH(STR_TO_DATE(CONCAT(h2.Month, ' 1 ', :yearFilter), '%M %d %Y'))  as dt
+     FROM tbl_history h2
+     WHERE h2.Resident_ID = r.Resident_ID
+     AND ((SELECT MONTH(CURDATE()) - 1) <> 0)
+ 	 AND (SELECT MONTH(CURDATE()) AS current_month) > MONTH(STR_TO_DATE(CONCAT(h2.Month, ' 1 ', :yearFilter), '%M %d %Y'))
+     ORDER BY MONTH(STR_TO_DATE(CONCAT(h2.Month, ' 1 ', :yearFilter), '%M %d %Y')) DESC 
+     LIMIT 1) < (SELECT MONTH(CURDATE()) AS current_month) ) THEN 'Compliant' ELSE CASE WHEN m.StreetLight = 'No' THEN 'Compliant'  ELSE ' Delinquent' END END AS Status
 FROM tbl_residents r 
-JOIN tbl_monthly_dues m 
-ON r.resident_ID = m.resident 
-WHERE m.Year = :yearFilter";
+JOIN tbl_monthly_dues m ON r.resident_ID = m.resident 
+WHERE m.Year = :yearFilter;";
 
 $stmt = $pdo->prepare($query);
 $stmt->bindParam(':yearFilter', $yearFilter, PDO::PARAM_INT);

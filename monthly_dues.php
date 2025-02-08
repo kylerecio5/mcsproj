@@ -362,7 +362,7 @@ FROM tbl_residents r;
 
                         <label for="payment-month">Month:</label>
                         <select id="payment-month" name="month" required>
-                            <option value="" disabled selected>Select Month</option>
+                            <option value="" disabled selected >Select Month</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>

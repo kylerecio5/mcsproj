@@ -15,6 +15,7 @@ try {
 // Check if 'user' parameter is provided
 if (isset($_GET['user']) && !empty($_GET['user'])) {
     $user = $_GET['user'];
+    $year = $_GET['year'];
 
 
     //To get year parameter - 01/1/2025
@@ -22,6 +23,7 @@ if (isset($_GET['user']) && !empty($_GET['user'])) {
 
     // Filter the input to prevent security vulnerabilities
     $user = filter_var($user, FILTER_SANITIZE_NUMBER_INT);
+    $year = filter_var($year, FILTER_SANITIZE_NUMBER_INT);
 
     // Validate that $user is a valid number
     if (filter_var($user, FILTER_VALIDATE_INT) === false) {
@@ -58,20 +60,21 @@ if (isset($_GET['user']) && !empty($_GET['user'])) {
     COALESCE(h.History_ID, '') AS History_ID,
     COALESCE(h.Date, '') AS Payment_Date,
     COALESCE(md.Dues_ID, '') AS Dues_ID,
-    COALESCE(md.Year, 2025) AS Year,
-    8 AS Resident_ID,
+    COALESCE(md.Year, :year) AS Year,
+    :residentId AS Resident_ID,
     m.LongName AS Month,
     COALESCE(md.Amount, 0) AS Amount_Due,
     COALESCE(h.Amount, 0) AS Amount_Paid
 FROM tbl_months m
 LEFT JOIN tbl_history h 
-    ON h.Month = m.LongName AND h.Resident_ID = :residentId AND h.Year = 2025
+    ON h.Month = m.LongName AND h.Resident_ID = :residentId AND h.Year = :year
 LEFT JOIN tbl_monthly_dues md 
-    ON md.Resident = 8 AND md.Year = 2025
-ORDER BY COALESCE(md.Year, 2025), m.Month_ID;";
+    ON md.Resident = :residentId AND md.Year = :year
+ORDER BY COALESCE(md.Year, :year), m.Month_ID;";
 
         $stmt = $pdo->prepare($query);
-        $stmt->bindParam(':residentId', $user, PDO::PARAM_INT);
+        $stmt->bindParam(':residentId', $user, PDO::PARAM_INT); 
+        $stmt->bindParam(':year', $year, PDO::PARAM_INT);
         //To get year parameter - 01/1/2025
         //$stmt->bindParam(':year', $year, PDO::PARAM_INT);
         $stmt->execute();
